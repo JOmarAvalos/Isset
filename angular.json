@@ -27,11 +27,7 @@
                             "src/styles.css",
                             "src/search.css"
                         ],
-                        "scripts": [
-                            "src/main.js",
-                            "src/search.js",
-                            "src/contactform.js"
-                        ]
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
