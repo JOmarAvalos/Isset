@@ -19,6 +19,7 @@ a:focus {
 p {
     padding: 0;
     margin: 0 0 30px 0;
+    color: #999;
 }
 
 h1,
@@ -139,105 +140,111 @@ h6 {
 
 
 /*--------------------------------------------------------------
-  # Hero Section
+  # Footer
   --------------------------------------------------------------*/
 
-#hero {
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
     width: 100%;
-    height: 100vh;
-    background: url(../src/assets/img/Fondo_002.jpg) center;
-    background-size: cover;
-    position: absolute;
 }
 
-@media (min-width: 1024px) {
-    #hero {
-        background-attachment: fixed;
-    }
+.copyright {
+    margin-bottom: 0;
+    line-height: 40px;
+    color: #fff;
 }
 
-#hero:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 
-#hero .hero-container {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+/*-------------------------------------
+  13.  Footer-copyright
+  --------------------------------------*/
+
+
+/*foot-icons*/
+
+.space {
+    justify-content: space-between;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+
+.foot-icons {
     text-align: center;
+    /* margin-top:30px; */
+    text-align: justify;
+    margin-left: 10rem;
 }
 
-#hero h1 {
-    margin: 30px 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 28px;
-        line-height: 36px;
-    }
-}
-
-#hero h2 {
-    color: #eee;
-    margin-bottom: 50px;
-    font-size: 24px;
-}
-
-@media (max-width: 768px) {
-    #hero h2 {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
-    }
-    /* FOTER */
-    .foot-icons {
-        margin-left: 2.5rem !important;
-        margin-top: 60px !important;
-    }
-    .hidden {
-        display: none!important;
-    }
-    .copyright {
-        margin-left: 5rem!important;
-    }
-}
-
-#hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
+.foot-icons .footer-social-links li {
+    padding: 0 10px;
+    text-align: center;
     display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
 }
 
-#hero .btn-get-started:hover {
-    background: #2dc997;
-    border: 2px solid #2dc997;
+.foot-icons .footer-social-links a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 50%;
+}
+
+.foot-icon-bg-1 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8938ae+0,c13181+100 */
+    background: #8938ae;
+    /* Old browsers */
+    background: -webkit-linear-gradient(right, #8938ae 0%, #c13181 100%);
+    background: -o-linear-gradient(right, #8938ae 0%, #c13181 100%);
+    background: linear-gradient(to right, #8938ae 0%, #c13181 100%);
+}
+
+.foot-icon-bg-2 {
+    background: #3b5999;
+}
+
+.foot-icon-bg-3 {
+    background: #1da1f3;
+}
+
+.foot-icon-bg-4 {
+    background-color: #3CC44F;
+}
+
+.foot-icon-bg-5 {
+    background-color: #FF0000;
+}
+
+.foot-icons .footer-social-links a:hover {
+    /*color: #00d8d5;*/
+    color: #e9e9e9;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.foot-icons p {
+    color: #aaa;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+.foot-icons p a,
+.foot-icons p a:hover,
+.foot-icons p a:focus {
+    color: #00d8ff;
+    font-size: 16px;
+    margin-top: 28px;
 }
 
 
@@ -536,112 +543,796 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*--------------------------------------------------------------
-  # Footer
+  # Quienes Section
   --------------------------------------------------------------*/
 
-.site-footer {
-    position: absolute;
-    bottom: 0;
-    padding: 10px 0;
+#quienes {
     width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
 }
 
-.copyright {
-    margin-bottom: 0;
-    line-height: 40px;
+@media (min-width: 1024px) {
+    #quienes {
+        background-attachment: fixed;
+    }
+}
+
+#quienes:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#quienes .quienes-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#quienes h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
     color: #fff;
 }
 
-
-/*-------------------------------------
-          13.  Footer-copyright
-  --------------------------------------*/
-
-
-/*foot-icons*/
-
-.space {
-    justify-content: space-between;
-    display: flex;
+@media (max-width: 768px) {
+    #quienes h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
 }
 
-.foot-icons {
-    text-align: center;
-    /* margin-top:30px; */
+#quienes h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #quienes h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#quienes .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#quienes .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#quienes .quienes-container p {
+    line-height: 26px;
+}
+
+#quienes .quienes-container p:last-child {
+    margin-bottom: 0;
+}
+
+.quienes-description {
     text-align: justify;
-    margin-left: 10rem;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
 }
 
-.foot-icons .footer-social-links li {
-    padding: 0 10px;
+
+/*--------------------------------------------------------------
+  # Mision Section
+  --------------------------------------------------------------*/
+
+#mision {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #mision {
+        background-attachment: fixed;
+    }
+}
+
+#mision:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#mision .mision-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#mision h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #mision h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#mision h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #mision h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#mision .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#mision .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#mision .mision-container p {
+    line-height: 26px;
+}
+
+#mision .mision-container p:last-child {
+    margin-bottom: 0;
+}
+
+.mision-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
+}
+
+
+/*--------------------------------------------------------------
+  # Vision Section
+  --------------------------------------------------------------*/
+
+#vision {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #vision {
+        background-attachment: fixed;
+    }
+}
+
+#vision:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#vision .vision-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#vision h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #vision h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#vision h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #vision h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#vision .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#vision .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#vision .vision-container p {
+    line-height: 26px;
+}
+
+#vision .vision-container p:last-child {
+    margin-bottom: 0;
+}
+
+.vision-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
+}
+
+
+/* Services Section
+--------------------------------*/
+
+#services {
+    background-size: cover;
+    padding: 160px 0 60px 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #services {
+        background-attachment: fixed;
+    }
+}
+
+#services:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#services .services-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#services .box {
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    height: 100px;
+    position: relative;
+    background: #fafafa;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#services .icon {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 72px;
+    height: 72px;
+    background: #2dc997;
+}
+
+#services .icon a {
     display: inline-block;
 }
 
-.foot-icons .footer-social-links a {
+#services .icon i {
     color: #fff;
-    display: block;
+    font-size: 24px;
+}
+
+#services .box:hover .icon {
+    background: #fff;
+    border: 2px solid #2dc997;
+}
+
+#services .box:hover .icon i {
+    color: #2dc997;
+}
+
+#services .box:hover .icon a {
+    color: #2dc997;
+}
+
+#services .title {
+    font-weight: 700;
     font-size: 18px;
-    width: 50px;
-    line-height: 50px;
-    height: 50px;
+    margin-bottom: 15px;
+}
+
+#services .title a {
+    color: #111;
+}
+
+#services .description {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#services h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.services-header .services-title {
+    font-size: 32px;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.services-header .services-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
+}
+
+#services .row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/* ServicesDet Section
+--------------------------------*/
+
+#serviciosdet {
+    background-size: cover;
+    padding: 160px 0 60px 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+#serviciosdet:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#serviciosdet .serviciosdet-container .background {
+    min-height: 300px;
+    /*background: url(../src/assets/img/about-img.jpg) center top no-repeat;*/
+    margin-bottom: 20px;
+    margin-top: 80px;
+    opacity: 0.9;
+}
+
+#serviciosdet .serviciosdet-container .content {
+    margin-top: 40px;
+}
+
+#serviciosdet .serviciosdet-container .title {
+    color: #eee;
+    font-size: 24px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #serviciosdet .serviciosdet-container .title {
+        padding-top: 15px;
+    }
+}
+
+#serviciosdet .serviciosdet-container p {
+    line-height: 26px;
+}
+
+#serviciosdet .serviciosdet-container p:last-child {
+    margin-bottom: 0;
+}
+
+#serviciosdet .serviciosdet-container .icon-box {
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+#serviciosdet .serviciosdet-container .icon-box .icon {
+    float: left;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     border-radius: 50%;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
+    border: 2px solid #2dc997;
+}
+
+#serviciosdet .serviciosdet-container .icon-box .icon i {
+    color: #2dc997;
+    font-size: 24px;
+}
+
+#serviciosdet .serviciosdet-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#serviciosdet .serviciosdet-container .icon-box .title a {
+    color: #999;
+}
+
+#serviciosdet .serviciosdet-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#serviciosdet h2 {
+    color: #eee;
+    font-size: 24px;
+}
+
+
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#hero h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#hero .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#hero .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#hero .hero-container p {
+    line-height: 26px;
+}
+
+#hero .hero-container p:last-child {
+    margin-bottom: 0;
+}
+
+.hero-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    color: #999;
+}
+
+
+/* About Us Section
+--------------------------------*/
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+#about .about-container .background {
+    min-height: 300px;
+    margin-bottom: 10px;
+}
+
+#about .about-container .content {}
+
+#about .about-container .title {
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    #about .about-container .title {
+        padding-top: 15px;
+    }
+}
+
+#about .about-container p {
+    line-height: 26px;
+}
+
+#about .about-container p:last-child {
+    margin-bottom: 0;
+}
+
+#about .about-container .icon-box {
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+    float: left;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     border-radius: 50%;
+    border: 2px solid #2dc997;
 }
 
-.foot-icon-bg-1 {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8938ae+0,c13181+100 */
-    background: #8938ae;
-    /* Old browsers */
-    background: -webkit-linear-gradient(right, #8938ae 0%, #c13181 100%);
-    background: -o-linear-gradient(right, #8938ae 0%, #c13181 100%);
-    background: linear-gradient(to right, #8938ae 0%, #c13181 100%);
+#about .about-container .icon-box .icon i {
+    color: #2dc997;
+    font-size: 24px;
 }
 
-.foot-icon-bg-2 {
-    background: #3b5999;
+#about .about-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-.foot-icon-bg-3 {
-    background: #1da1f3;
+#about .about-container .icon-box .title a {
+    color: #111;
 }
 
-.foot-icon-bg-4 {
-    background-color: #3CC44F;
+#about .about-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
 }
-
-.foot-icon-bg-5 {
-    background-color: #FF0000;
-}
-
-.foot-icons .footer-social-links a:hover {
-    /*color: #00d8d5;*/
-    color: #e9e9e9;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.foot-icons p {
-    color: #aaa;
-    font-size: 16px;
-    margin-top: 28px;
-}
-
-.foot-icons p a,
-.foot-icons p a:hover,
-.foot-icons p a:focus {
-    color: #00d8ff;
-    font-size: 16px;
-    margin-top: 28px;
-}
-
-
-/*foot-icons*/

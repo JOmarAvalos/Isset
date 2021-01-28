@@ -11,6 +11,12 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { PromocionesComponent } from './components/promociones/promociones.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { MisionComponent } from './components/mision/mision.component';
+import { VisionComponent } from './components/vision/vision.component';
+import { TelefoniaComponent } from './components/servicios/telefonia/telefonia.component';
+import { ComputoComponent } from './components/servicios/computo/computo.component';
+import { RedesComponent } from './components/servicios/redes/redes.component';
+import { SeguridadComponent } from './components/servicios/seguridad/seguridad.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     ServiciosComponent,
     ProductosComponent,
     PromocionesComponent,
-    ContactoComponent
+    ContactoComponent,
+    MisionComponent,
+    VisionComponent,
+    TelefoniaComponent,
+    ComputoComponent,
+    RedesComponent,
+    SeguridadComponent
   ],
   imports: [
     BrowserModule,
