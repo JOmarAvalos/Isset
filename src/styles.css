@@ -2,6 +2,7 @@ body {
     background: #fff;
     color: #666666;
     font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
 }
 
 a {
@@ -1064,7 +1065,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     min-height: 300px;
     /*background: url(../src/assets/img/about-img.jpg) center top no-repeat;*/
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 120px;
     opacity: 0.9;
 }
 
@@ -1138,12 +1139,38 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 24px;
 }
 
+#serviciosdet .serviciosdet-container .icon-box-esp {
+    background-size: cover;
+    padding: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#serviciosdet .serviciosdet-container .icon-box-esp .icon {
+    float: left;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    background: #2dc997;
+}
+
+#serviciosdet .serviciosdet-container .icon-box-esp .icon i {
+    color: #eee;
+    font-size: 96px;
+}
+
 
 /*--------------------------------------------------------------
-  # Hero Section
+  # Home Section
   --------------------------------------------------------------*/
 
-#hero {
+#home {
     width: 100%;
     height: 100vh;
     background: url(../src/assets/img/Fondo_002.jpg) center;
@@ -1152,12 +1179,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 1024px) {
-    #hero {
+    #home {
         background-attachment: fixed;
     }
 }
 
-#hero:before {
+#home:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -1167,7 +1194,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
 }
 
-#hero .hero-container {
+#home .home-container {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1182,7 +1209,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 50px;
 }
 
-#hero h1 {
+#home h1 {
     margin: 30px 0 10px 0;
     font-size: 48px;
     font-weight: 700;
@@ -1192,20 +1219,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
-    #hero h1 {
+    #home h1 {
         font-size: 28px;
         line-height: 36px;
     }
 }
 
-#hero h2 {
+#home h2 {
     color: #eee;
     margin-bottom: 50px;
     font-size: 24px;
 }
 
 @media (max-width: 768px) {
-    #hero h2 {
+    #home h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
@@ -1223,7 +1250,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-#hero .btn-get-started {
+#home .btn-get-started {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
@@ -1238,22 +1265,37 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #fff;
 }
 
-#hero .btn-get-started:hover {
+#home .btn-get-started:hover {
     background: #2dc997;
     border: 2px solid #2dc997;
 }
 
-#hero .hero-container p {
+#home .home-container p {
     line-height: 26px;
 }
 
-#hero .hero-container p:last-child {
+#home .home-container p:last-child {
     margin-bottom: 0;
 }
 
-.hero-description {
+.home-description {
     text-align: justify;
     padding-bottom: 40px;
+    color: #999;
+}
+
+.home-header .home-title {
+    font-size: 32px;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.home-header .home-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     color: #999;
 }
 
@@ -1335,4 +1377,367 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 80px;
     line-height: 24px;
     font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+  # Contacto Section
+  --------------------------------------------------------------*/
+
+#contacto {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #contacto {
+        background-attachment: fixed;
+    }
+}
+
+#contacto:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#contacto .contacto-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#contacto h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #contacto h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#contacto h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #contacto h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#contacto .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#contacto .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#contacto .contacto-container p {
+    line-height: 26px;
+}
+
+#contacto .contacto-container p:last-child {
+    margin-bottom: 0;
+}
+
+.contacto-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
+}
+
+
+/*--------------------------------------------------------------
+  # Promociones Section
+  --------------------------------------------------------------*/
+
+#promociones {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #promociones {
+        background-attachment: fixed;
+    }
+}
+
+#promociones:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#promociones .promociones-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#promociones h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #promociones h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#promociones h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #promociones h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#promociones .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#promociones .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#promociones .promociones-container p {
+    line-height: 26px;
+}
+
+#promociones .promociones-container p:last-child {
+    margin-bottom: 0;
+}
+
+.promociones-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
+}
+
+
+/*--------------------------------------------------------------
+  # Productos Section
+  --------------------------------------------------------------*/
+
+#productos {
+    width: 100%;
+    height: 100vh;
+    background: url(../src/assets/img/Fondo_002.jpg) center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media (min-width: 1024px) {
+    #productos {
+        background-attachment: fixed;
+    }
+}
+
+#productos:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#productos .productos-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#productos h1 {
+    margin: 30px 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #productos h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#productos h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #productos h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    /* FOTER */
+    .foot-icons {
+        margin-left: 2.5rem !important;
+        margin-top: 60px !important;
+    }
+    .hidden {
+        display: none!important;
+    }
+    .copyright {
+        margin-left: 5rem!important;
+    }
+}
+
+#productos .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#productos .btn-get-started:hover {
+    background: #2dc997;
+    border: 2px solid #2dc997;
+}
+
+#productos .productos-container p {
+    line-height: 26px;
+}
+
+#productos .productos-container p:last-child {
+    margin-bottom: 0;
+}
+
+.productos-description {
+    text-align: justify;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #999;
 }

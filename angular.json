@@ -25,9 +25,24 @@
                         ],
                         "styles": [
                             "src/styles.css",
-                            "src/search.css"
+                            "src/search.css",
+                            "src/assets/lib/bootstrap/css/bootstrap.min.css",
+                            "src/assets/lib/font-awesome/css/font-awesome.min.css",
+                            "src/assets/lib/animate/animate.min.css"
                         ],
-                        "scripts": []
+                        "scripts": [
+                            "src/assets/lib/jquery/jquery.min.js",
+                            "src/assets/lib/jquery/jquery-migrate.min.js",
+                            "src/assets/lib/bootstrap/js/bootstrap.bundle.min.js",
+                            "src/assets/lib/easing/easing.min.js",
+                            "src/assets/lib/wow/wow.min.js",
+                            "src/assets/lib/waypoints/waypoints.min.js",
+                            "src/assets/lib/counterup/counterup.min.js",
+                            "src/assets/lib/superfish/hoverIntent.js",
+                            "src/assets/lib/superfish/superfish.min.js",
+                            "src/assets/lib/js/contactform.js",
+                            "src/assets/lib/js/main.js"
+                        ]
                     },
                     "configurations": {
                         "production": {
@@ -85,11 +100,28 @@
                         "assets": [
                             "src/favicon.ico",
                             "src/assets"
+
+
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.css",
+                            "src/assets/lib/bootstrap/css/bootstrap.min.css",
+                            "src/assets/lib/font-awesome/css/font-awesome.min.css",
+                            "src/assets/lib/animate/animate.min.css"
                         ],
-                        "scripts": []
+                        "scripts": [
+                            "src/assets/lib/jquery/jquery.min.js",
+                            "src/assets/lib/jquery/jquery-migrate.min.js",
+                            "src/assets/lib/bootstrap/js/bootstrap.bundle.min.js",
+                            "src/assets/lib/easing/easing.min.js",
+                            "src/assets/lib/wow/wow.min.js",
+                            "src/assets/lib/waypoints/waypoints.min.js",
+                            "src/assets/lib/counterup/counterup.min.js",
+                            "src/assets/lib/superfish/hoverIntent.js",
+                            "src/assets/lib/superfish/superfish.min.js",
+                            "src/assets/lib/js/contactform.js",
+                            "src/assets/lib/js/main.js"
+                        ]
                     }
                 },
                 "lint": {
