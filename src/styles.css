@@ -139,6 +139,11 @@ h6 {
     transition: all 0.5s;
 }
 
+#header .container h3 {
+    color: #fff;
+    text-align: right;
+}
+
 
 /*--------------------------------------------------------------
   # Footer
@@ -1282,6 +1287,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: justify;
     padding-bottom: 40px;
     color: #999;
+    margin-top: 15px;
+}
+
+.home-header {
+    margin-top: 165px;
 }
 
 .home-header .home-title {
@@ -1297,6 +1307,58 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 100px;
     padding-right: 100px;
     color: #999;
+}
+
+.home-container .row {}
+
+#home .icon {
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #2dc997;
+}
+
+#home .icon:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #2dc997;
+}
+
+.home-icons {
+    text-align: center;
+    /* margin-top:30px; */
+    text-align: justify;
+}
+
+.home-icons .home-services-links li {
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.home-icons .home-services-links a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.home-icons .home-services-links a:hover {
+    color: #2dc997;
+    text-decoration: none;
 }
 
 
